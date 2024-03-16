@@ -49,9 +49,8 @@ class BookSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-
-
-
+class BookUrlSerializer(serializers.Serializer):
+    image_url = serializers.CharField(max_length=256)
 
 
 
